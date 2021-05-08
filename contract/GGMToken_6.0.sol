@@ -6,8 +6,8 @@ pragma solidity 0.6.6;
 // Deployed to : 0xDcaC7cBF9892aA70573999fB0aC47358EEAE64b2
 // Symbol      : CHK
 // Name        : CHONK
-// Total supply: 10,000,000
-// Decimals    : 18
+// Total supply: 1000000000
+// Decimals    : 6
 //
 // Enjoy.
 //
@@ -115,8 +115,8 @@ contract CHONK is ERC20Interface, Owned, SafeMath {
     constructor() public {
         symbol = "CHK";
         name = "CHONK";
-        decimals = 0;
-        _totalSupply = 100000000;
+        decimals = 6;
+        _totalSupply = 1000000000;
         balances[0xDcaC7cBF9892aA70573999fB0aC47358EEAE64b2] = _totalSupply;
         emit Transfer(address(0), 0xDcaC7cBF9892aA70573999fB0aC47358EEAE64b2, _totalSupply);
     }
